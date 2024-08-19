@@ -1,4 +1,4 @@
-python 3.9.5
-OpenCV
-tensorflow 2.15.0
+#python 3.9.5
+Opencv-python
+tensorflow==2.15.0
 pywhatkit
