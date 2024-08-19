@@ -1,18 +1,29 @@
 # SmartCCTVAlert
+# SmartCCTVAlert
 
 Overview
-The CCTV Proximity Alert System is designed to monitor a CCTV feed and notify the owner if a human is detected within a specified threshold distance. It uses YOLO (You Only Look Once) for real-time object detection, calculates the distance between the detected human and the camera, and sends an alert via WhatsApp if the person is within the threshold distance.
+A project that uses the CCTV feed and has the capability of alerting the owner in case of a human threshold detection. This distance metric gives the distance between the detected human and the camera with regard to real-time object detection via YOLO (You Only Look Once) and sends an alert via WhatsApp if the person is in the threshold distance.
 
 Features
-Real-time human detection using YOLO
-Distance estimation between the human and the camera
-Automated WhatsApp alert notification when the threshold distance is breached
-Customizable distance threshold and alert settings
+
+->Real-time human detection via YOLO
+
+->Distance estimation between the human and the camera
+
+->Automated WhatsApp alert notification when the threshold distance is breached
+
+->Customizable distance threshold and alert settings
+
+
 Prerequisites
-Python 3.9 or later
-Required Python libraries: opencv-python, ultralytics, pywhatkit
-YOLO model weights file (e.g., yolov10n.pt)
-Reference image with known width and distance
+
+->Python 3.9 or later
+
+->Required Python libraries: opencv-python, pywhatkit
+
+->YOLO model weights file, e.g. yolov10n.pt
+
+->Reference image with known width and distance
 
 Installation
 
@@ -21,45 +32,45 @@ https://github.com/Inbaselvan-ayyanar/SmartCCTVAlert.git
 
 cd SmartCCTVAlert
 
-2.Install required packages
+2. Install required packages
 pip install -r requirements.txt
 
-3.Download YOLO model weights:
+3. Download YOLO model weights:
 
-4.Download the YOLOv5 model weights (e.g., yolov10n.pt) and place them in the project directory.
-Configure your WhatsApp number:
+4. Download YOLO
 
-Edit the notification.py file to include your WhatsApp phone number.
+Edit WhatsApp's phone number in notification.py
 
-Usage
+ Usage
 
-->Prepare a reference image:
+ -> Prepare a reference image:
+    
 
-       Ensure you have a reference image (img.jpg) with a known width and distance to calibrate the focal length.
+       Ensure you have the reference image whose both width and distance values are known to calibrate the focal length.
+     
+ -> Run the script:
+          Execute the script with the following command:
+ 
+         python main.py
+     
 
-->Run the script:
-       
-       python main.py
-       
+ Configuration
 
-Configuration
+-> known_width : Here you have to enter the real width of a person's face.
 
-->known_width: Enter the actual width of the person in the reference image.
+-> known_distance : Here, you have to enter the actual distance of a person from the camera.
 
-->known_distance: Enter the actual distance between the person and the camera in the reference image.
+-> threshold_distance : It is the minimum distance of a person from the camera to avoid unnecessary alarm trigger.
 
-->threshold_distance: Set the distance threshold in centimeters for triggering alerts.
+Troubleshooting:
 
-Troubleshooting
+-> Ensure That Your Webcam Is Properly Working.
 
-->Ensure that your webcam is working properly.
+-> Ensure That The Yolo Model Weights File Is Downloaded And Placed In The Project Directory.
 
-->Verify that the YOLO model weights file is correctly downloaded and placed in the project directory.
+-> Ensure That The WhatsApp Number Is Proper In The notification. py File.
 
-->Make sure your WhatsApp number is correctly configured in the notification.py file.
-
-->Ensure the reference image path is specified properly with the correct calculaion of the person width and dustance between camera and human
-
+-> Make sure the reference image path is specified properly for the person width and distance between camera and human
 
 Contact
 For any questions or issues, please contact [a.inbaselvan@gmail.com].
