@@ -33,20 +33,26 @@ Edit the notification.py file to include your WhatsApp phone number.
 Usage
 
 ->Prepare a reference image:
-Ensure you have a reference image (img.jpg) with a known width and distance to calibrate the focal length.
+
+       Ensure you have a reference image (img.jpg) with a known width and distance to calibrate the focal length.
 
 ->Run the script:
-python main.py
-The script will open a webcam feed, detect humans, and notify you via WhatsApp if a detected person is within the specified threshold distance.
+       python main.py
+       
+       The script will open a webcam feed, detect humans, and notify you via WhatsApp if a detected person is within the specified threshold distance.
 
 Configuration
 
 ->known_width: Enter the actual width of the person in the reference image.
+
 ->known_distance: Enter the actual distance between the person and the camera in the reference image.
+
 ->threshold_distance: Set the distance threshold in centimeters for triggering alerts.
 
 Troubleshooting
 
 ->Ensure that your webcam is working properly.
+
 ->Verify that the YOLO model weights file is correctly downloaded and placed in the project directory.
+
 ->Make sure your WhatsApp number is correctly configured in the notification.py file.
