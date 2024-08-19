@@ -29,7 +29,9 @@ pip install -r requirements.txt
 Configure your WhatsApp number:
 
 Edit the notification.py file to include your WhatsApp phone number.
+
 Usage
+
 ->Prepare a reference image:
 Ensure you have a reference image (img.jpg) with a known width and distance to calibrate the focal length.
 
