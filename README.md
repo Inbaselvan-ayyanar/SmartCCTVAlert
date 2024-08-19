@@ -1,5 +1,5 @@
 # SmartCCTVAlert
-# SmartCCTVAlert
+
 
 Overview
 A project that uses the CCTV feed and has the capability of alerting the owner in case of a human threshold detection. This distance metric gives the distance between the detected human and the camera with regard to real-time object detection via YOLO (You Only Look Once) and sends an alert via WhatsApp if the person is in the threshold distance.
