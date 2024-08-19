@@ -18,6 +18,7 @@ Installation
 
 1.Clone the repository
 https://github.com/Inbaselvan-ayyanar/SmartCCTVAlert.git
+
 cd SmartCCTVAlert
 
 2.Install required packages
