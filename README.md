@@ -57,3 +57,11 @@ Troubleshooting
 ->Verify that the YOLO model weights file is correctly downloaded and placed in the project directory.
 
 ->Make sure your WhatsApp number is correctly configured in the notification.py file.
+
+->Ensure the reference image path is specified properly with the correct calculaion of the person width and dustance between camera and human
+
+
+Contact
+For any questions or issues, please contact [a.inbaselvan@gmail.com].
+
+
