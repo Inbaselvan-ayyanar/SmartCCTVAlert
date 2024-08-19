@@ -37,9 +37,9 @@ Usage
        Ensure you have a reference image (img.jpg) with a known width and distance to calibrate the focal length.
 
 ->Run the script:
+       
        python main.py
        
-       The script will open a webcam feed, detect humans, and notify you via WhatsApp if a detected person is within the specified threshold distance.
 
 Configuration
 
